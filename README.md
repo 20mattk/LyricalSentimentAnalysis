@@ -4,4 +4,4 @@ Predicting the sentiment of a song given it's lyrics.
 2. Converts the URL into a .wav audio file 🔊
 3. Separates the vocals from the song 🎤
 4. Transcribes the vocal track into plain text 📝
-5. TODO: Performs sentiment analysis on the transcription of the lyrics 🎭
+5. Performs sentiment analysis on the transcription of the lyrics 🎭
