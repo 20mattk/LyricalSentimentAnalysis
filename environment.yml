@@ -31,7 +31,7 @@ dependencies:
   - ipython=8.12.2=py38hca03da5_0
   - ipython_genutils=0.2.0=pyhd3eb1b0_1
   - jedi=0.18.1=py38hca03da5_1
-  - jinja2=3.1.3=py38hca03da5_0
+  - jinja2=3.1.4=py38hca03da5_0
   - json5=0.9.6=pyhd3eb1b0_0
   - jsonschema=4.19.2=py38hca03da5_0
   - jsonschema-specifications=2023.7.1=py38hca03da5_0
@@ -57,6 +57,7 @@ dependencies:
   - nbformat=5.9.2=py38hca03da5_0
   - ncurses=6.4=h313beb8_0
   - nest-asyncio=1.6.0=py38hca03da5_0
+  - nltk=3.8.1=py38hca03da5_0
   - notebook=6.5.4=py38hca03da5_1
   - notebook-shim=0.2.3=py38hca03da5_0
   - openssl=3.0.13=h1a28f6b_2
@@ -83,6 +84,7 @@ dependencies:
   - pyzmq=24.0.1=py38h80987f9_0
   - readline=8.2=h1a28f6b_0
   - referencing=0.30.2=py38hca03da5_0
+  - requests=2.32.2=py38hca03da5_0
   - rfc3339-validator=0.1.4=py38hca03da5_0
   - rfc3986-validator=0.1.1=py38hca03da5_0
   - rpds-py=0.10.6=py38hf0e4da2_0
@@ -97,10 +99,9 @@ dependencies:
   - tk=8.6.14=h6ba3021_0
   - tomli=2.0.1=py38hca03da5_0
   - tornado=6.3.3=py38h80987f9_0
+  - tqdm=4.66.4=py38h33ce5c2_0
   - traitlets=5.7.1=py38hca03da5_0
   - typing_extensions=4.11.0=py38hca03da5_0
-  - urllib3=2.2.1=py38hca03da5_0
-  - wcwidth=0.2.5=pyhd3eb1b0_0
   - webencodings=0.5.1=py38hca03da5_1
   - websocket-client=1.8.0=py38hca03da5_0
   - wheel=0.43.0=py38hca03da5_0
@@ -112,20 +113,36 @@ dependencies:
   - zlib=1.2.13=h18a0788_1
   - pip:
       - absl-py==2.1.0
+      - accelerate==0.30.1
       - anyio==3.7.1
       - arrow==1.3.0
       - astunparse==1.6.3
       - async-lru==2.0.4
       - audioread==3.0.1
+      - boto3==1.34.120
+      - botocore==1.34.120
+      - bpemb==0.3.5
       - cachetools==5.3.3
       - charset-normalizer==3.3.2
       - click==7.1.2
+      - commonmark==0.9.1
+      - conllu==4.5.3
+      - contourpy==1.1.1
+      - cycler==0.12.1
+      - deprecated==1.2.14
       - exceptiongroup==1.2.1
       - ffmpeg-python==0.2.0
+      - filelock==3.14.0
+      - flair==0.13.1
       - flatbuffers==24.3.25
+      - fonttools==4.53.0
       - fqdn==1.5.1
+      - fsspec==2024.5.0
+      - ftfy==6.2.0
       - future==1.0.0
       - gast==0.4.0
+      - gdown==5.2.0
+      - gensim==4.3.2
       - google-auth==2.29.0
       - google-auth-oauthlib==1.0.0
       - google-pasta==0.2.0
@@ -136,10 +153,13 @@ dependencies:
       - hpack==4.0.0
       - httpcore==1.0.5
       - httpx==0.27.0
+      - huggingface-hub==0.23.3
       - hyperframe==6.0.1
       - importlib-metadata==7.1.0
       - importlib-resources==6.4.0
       - isoduration==20.11.0
+      - janome==0.5.0
+      - jmespath==1.0.1
       - joblib==1.4.2
       - jsonpointer==2.4
       - jupyter-lsp==2.2.5
@@ -147,39 +167,65 @@ dependencies:
       - jupyterlab-server==2.27.2
       - jupyterlab-vim==4.1.3
       - keras==2.13.1
+      - kiwisolver==1.4.5
+      - langdetect==1.0.9
       - libclang==18.1.1
       - librosa==0.8.1
       - llvmlite==0.38.1
+      - lxml==5.2.2
       - markdown==3.6
       - markupsafe==2.1.5
+      - matplotlib==3.7.5
+      - more-itertools==10.2.0
+      - mpld3==0.5.10
+      - mpmath==1.3.0
+      - networkx==3.1
       - norbert==0.2.1
       - numba==0.55.2
       - numpy==1.22.4
       - oauthlib==3.2.2
+      - openai-whisper==20231117
       - opt-einsum==3.3.0
       - packaging==24.0
       - pandas==1.5.3
-      - platformdirs==4.2.2
+      - pillow==10.3.0
+      - platformdirs==2.6.2
+      - pluggy==1.5.0
       - pocketsphinx==5.0.3
       - pooch==1.8.1
+      - pptree==3.1
       - protobuf==3.20.3
       - pyasn1==0.6.0
       - pyasn1-modules==0.4.0
       - pycparser==2.22
       - pydub==0.25.1
+      - pyparsing==3.1.2
+      - pyscript==0.2.5
+      - pytorch-revgrad==0.2.0
       - pytube==15.0.0
-      - requests==2.32.2
+      - regex==2024.5.15
       - requests-oauthlib==2.0.0
       - resampy==0.4.3
       - rfc3986==1.5.0
+      - rich==12.6.0
+      - rich-click==1.8.2
       - rsa==4.9
+      - s3transfer==0.10.1
+      - safetensors==0.4.3
       - scikit-learn==1.3.2
       - scipy==1.10.1
+      - segtok==1.5.11
+      - semver==3.0.2
+      - sentencepiece==0.2.0
+      - smart-open==7.0.4
       - sniffio==1.3.1
       - sounddevice==0.4.7
       - soundfile==0.12.1
       - speechrecognition==3.10.4
       - spleeter==2.3.2
+      - sqlitedict==2.1.0
+      - sympy==1.12.1
+      - tabulate==0.9.0
       - tensorboard==2.13.0
       - tensorboard-data-server==0.7.2
       - tensorflow==2.13.0
@@ -188,12 +234,21 @@ dependencies:
       - tensorflow-metal==1.0.1
       - termcolor==2.4.0
       - threadpoolctl==3.5.0
-      - typer==0.3.2
+      - tiktoken==0.7.0
+      - tokenizers==0.19.1
+      - toml==0.10.2
+      - torch==2.3.0
+      - transformer-smaller-training-vocab==0.4.0
+      - transformers==4.41.2
+      - typer==0.4.2
       - types-python-dateutil==2.9.0.20240316
       - typing-extensions==4.5.0
       - uri-template==1.3.0
+      - urllib3==1.26.18
+      - wcwidth==0.2.13
       - webcolors==1.13
       - werkzeug==3.0.3
+      - wikipedia-api==0.6.0
       - wrapt==1.16.0
       - zipp==3.19.0
 prefix: /Users/mattkarenbauer/anaconda3/envs/spleeter
